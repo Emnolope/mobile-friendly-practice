@@ -1,0 +1,10 @@
+body {
+  /*background-image: url('https://cdn.searchenginejournal.com/wp-content/uploads/2019/07/the-essential-guide-to-using-images-legally-online-760x400.png');*/
+  background-image: url('./../background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-style: italic;
+}
