@@ -1,10 +1,8 @@
-var http = require('http');
-var fs = require('fs');
+var express = require('express');
+var app = express();
 
-http.createServer(function(req, res){
-    fs.readFile('index.html',function (err, data){
-        res.writeHead(200, {'Content-Type': 'text/html','Content-Length':data.length});
-        res.write(data);
-        res.end();
-    });
-}).listen(8000);
+//setting middleware
+var __dirname='./';
+var safety='';
+app.use(express.static(__dirname + safety)); //Serves resources from public folderno
+app.listen(8080);

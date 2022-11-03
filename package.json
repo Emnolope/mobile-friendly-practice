@@ -1,0 +1,22 @@
+{
+  "name": "mobile-friendly-practice",
+  "version": "1.0.0",
+  "description": "Bitwise class https://www.bitwiseindustries.com",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emnolope/mobile-friendly-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emnolope/mobile-friendly-practice/issues"
+  },
+  "homepage": "https://github.com/Emnolope/mobile-friendly-practice#readme",
+  "devDependencies": {
+    "express": "^4.18.2"
+  }
+}
