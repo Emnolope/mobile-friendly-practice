@@ -1,0 +1,31 @@
+@import "globals";
+@import "themes";
+@import "variables";
+
+.body {
+    li {
+        margin: 10px;
+    }
+    .nav {
+        ul {
+            display: flex;
+            list-style: none;
+            }
+    }
+    .side-nav{
+        @include themer(white,grey,20px);
+        ul {
+            display: flex;
+            list-style: none;
+            }
+        }
+    .hero {
+        background-color: $secondary;
+        color: $primary;
+        padding: 100px;
+        button {
+            background-color: white;
+        }
+    }
+}
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .position-relative > div{
+            background-color: black;
+            color: white;
+            min-height: 50px;
+            width: 50px;
+        }
+        .root{
+            --primary: rgb(34, 85, 126);
+            --secondary: bisque;
+        }
+        .row div{
+            background-color: red;
+            border: 1px solid black;
+        }
+        .bg-primary {
+            background-color: var(--primary)!important;
+        }
+        .bg-secondary {
+            background-color: bisque !important;
+        }
+        .text-primary{
+            color: var(--primary);
+        }
+        .text-secondary{
+            color: bisque;
+        }
+        .row > div {
+            background-color: red;
+            min-height: 20px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        .box {
+            background-color: green;
+            min-height: 20px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- try not to set min height, not height-->
+            <div class="col-6 col-sm-2 col-lg-12 mt-1 mb-1 my-1">
+                <h1 class="p-1 m-1">This is The Title</h1>
+            </div>
+            <div class="col-4">1</div>
+            <div class="col-2">2</div>
+            <div class="col-3 col-sm-4 col-lg-6">3</div>
+            <div class="col-9 bg-primary">4</div>
+            <div class="col-3">5</div>
+            <div class="col-3 offset-6 bg-secondary">6</div>
+            <div class="col">7</div>
+            <div class="col">8</div>
+            <div class="col">9</div>
+            <div class="col">10</div>
+            <div class="col">11</div>
+            <div class="col">12</div>
+            <div class="col">13</div>
+            <div class="col">14</div>
+            <div class="col">15</div>
+            <div class="col">16</div>
+            <div class="col">17</div>
+            <div class="col">18</div>
+            <div class="col">19</div>
+        </div>
+    </div>
+    <div class="d-flex">
+        <div class="box w-25 rounded shadow">1</div>
+        <div class="box w-25 rounded-sm ">2</div>
+        <div class="box w-25 rounded-lg">3</div>
+    </div>
+    <div class="position-relative">
+        <div class="position-absolute top-0 start-0"></div>
+        <div class="position-absolute top-0 end-0"></div>
+        <div class="position-absolute top-50 start-50"></div>
+        <div class="position-absolute bottom-50 end-50"></div>
+        <div class="position-absolute bottom-0 start-0"></div>
+        <div class="position-absolute bottom-0 end-0"></div>
+      </div>
+</body>
+</html>
